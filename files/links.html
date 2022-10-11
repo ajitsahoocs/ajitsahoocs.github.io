@@ -1,0 +1,202 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="favicon.ico" href="images/fav.ico"/>
+<title>aks</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+	
+	
+	
+	
+<!-- ************************* -->
+
+	
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- ************************* -->	
+<!-- scroll button  script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- ************************* -->	
+<!-- scroll button end -->	
+	
+	
+	
+	
+	
+
+<div id="wrapper">	
+<!--  navigation Menu -->	
+<div class="navbar">
+  <a href="index.html">Home</a> 
+ <!-- <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Link1</a>
+      <a href="#team">Link2</a>
+      <a href="#careers">Link3</a>
+    </div>
+  </div>    
+  <div class="subnav">
+	<button class="subnavbtn">Submenu <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+    </div>
+  </div> -->
+   <div class="subnav">
+    <button class="subnavbtn">  Research<i class="fa fa-caret-down"></i></button>
+    <!--<div class="subnav-content">
+      <a href="pages/esp32csi.html" >esp32 csi tool</a>
+    </div> -->
+  </div>    
+    <!--<a href="projects.html">Projects</a> -->
+ <div class="current_page_item">  <a href="links.html">Links</a> </div>
+</div>
+
+	<!-- End  navigation menu-->
+	
+	<!-- end #header -->
+	
+	<!-- end #menu -->
+	
+	
+<!-- ************************* -->	
+	
+<div id="page">
+<div id="page-bgtop">
+<div id="page-bgbtm">
+<div id="content">
+<div class="post">
+
+
+<h2 class="title">ESP Toolkit Links</h2>
+<h3 class="title">1. ESP32 Toolkit Links</h3>
+<div class="entry">
+<ul>
+  <li><a href="https://stevenmhernandez.github.io/ESP32-CSI-Tool/" target="_blank">ESP32 CSI toolkit by Steven M. Hernandez</a></li>
+  <li><a href="https://wrlab.github.io/Wi-ESP/" target="_blank">Wi-ESP (CSI toolkit) by Webizing Research Laboratory (WRL) </a></li>
+  <li><a href="https://github.com/jonathanmuller/ESP32-gather-channel-state-information-CSI-" target="_blank">ESP32 CSI Tool by jonathan muller </a></li>
+</ul>
+</div> <!--entry-->
+<h3 class="title">2. Linux 802.11n CSI Tool (Intel 5300 Wi-Fi NIC)</h3>
+<div class="entry">
+<ul>
+  <li><a href="https://dhalperi.github.io/linux-80211n-csitool/" target="_blank">Linux 802.11n CSI Tool by Dan Halperin</a></li>
+  <li><a href="https://github.com/dhalperi/linux-80211n-csitool-supplementary" target="_blank">Linux-80211n-csitool-supplementary
+ by Dan Halperin </a></li>
+  <li><a href="https://github.com/spanev/linux-80211n-csitool" target="_blank">Linux-80211n-csitool by Stanislav Panev </a></li>
+   <li><a href="https://github.com/naoufal51/Orion" target="_blank">ORION Orientation Estimation Using Commodity Wi-Fi </a></li>
+    <li><a href="https://sourceexample.com/article/en/a735e9ab7593edd48f1122f2c849dc71/" target="_blank">CSI Tools installation Intel 5300 + Ubuntu 14.04 </a></li>
+</ul>
+
+</div> <!--entry-->
+
+<h3 class="title">3. Atheros  and nexmon  csi toolkit</h3>
+<div class="entry">
+<ul>
+  <li><a href="https://wands.sg/research/wifi/AtherosCSI/" target="_blank">Atheros CSI Tool( Atheros 802.11n WiFi hardware) by Mo Li and Yaxiong Xie.</a></li>
+  <li><a href="https://github.com/seemoo-lab/nexmon_csi" target="_blank"> Nexmon CSI Tool by  
+Secure Mobile Networking Lab </a></li>
+  
+</ul>
+
+
+</div> <!--entry-->
+
+<h3 class="title">4.Setup and installation tools</h3>
+<div class="entry">
+<ul>
+   <li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/" target="_blank">ESP-IDF toolchain setup for windows and linux</a></li>
+  <li><a href="https://github.com/espressif/esp-idf" target="_blank">Esp32 Setup and Quick reference</a></li>
+   <li><a href="https://docs.platformio.org/en/latest/frameworks/espidf.html" target="_blank">PlatformIO Espressif IoT Development Framework</a></li>
+    <li><a href="https://github.com/Gi-z/CSIKit" target="_blank">Tools for extracting channel state information by Glenn Forbes</a></li>
+  
+</ul>
+
+
+</div> <!--entry-->
+
+
+<h3 class="title">4. Books and references</h3>
+<div class="entry">
+<ul>
+   <li><a href="https://web.stanford.edu/~dntse/wireless_book.html" target="_blank">Fundamentals of Wireless Communication, David Tse and Pramod Viswanath</a></li>
+   <li><a href="https://doi.org/10.1017/CBO9781316799895" target="_blank">Fundamentals of Massive MIMO, Thomas, Erik, Hong and Hien,Cambridge University Press</a></li>
+   <li><a href="https://www.gaussianwaves.com/2011/05/introduction-to-ofdm-orthogonal-frequency-division-multiplexing-2" target= "_balnk"> OFDM Basics</a></li>
+ 
+  
+</ul>
+
+
+</div> <!--entry-->
+
+
+</div><!--post-->
+					
+<!-- ************************* -->						
+					
+
+
+ <!--<p>Rounded corners for an element with a border:</p>
+<p id="rcorners1">Rounded corners!jfkghjfgh.jkfgh.ksjdfg.kdfjgh.afkjdghkdjfhg;kjfdgh;kjdsfghkjfdghkjfdglfhdgklfdhglkfhdlk</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners2">Rounded corners!</p>
+
+
+<ul class="custom-list">
+	<li>A</li>
+	<li>B</li>
+	<li>C</li>
+	<li>D</li>
+	<li>E</li>
+</ul> -->
+		
+					
+<div style="clear: both;">&nbsp;</div>
+</div> <!--content-->
+<div style="clear: both;">&nbsp;</div>
+</div> <!--page-bgbtmt-->
+</div> <!--page-bgtop-->
+</div>  <!--page-->
+<!-- end #page -->
+</div> <!--wrapper-->
+
+
+<!-- ************************* -->	
+
+<div id="footer">
+<!--<p>(&copy; 2021. All rights reserved, <a href="https://sahooajitkumar.github.io/" target="_blank">Ajit Kumar Sahoo </a>, email: ajit@uohyd.ac.in)</p> -->
+	<p>(&copy; 2021. All rights reserved)</p>
+</div>
+<!-- end #footer -->
+
+</body>
+</html>

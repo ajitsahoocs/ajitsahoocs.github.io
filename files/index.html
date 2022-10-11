@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="favicon.ico" href="images/fav.ico"/>
+<title>aks</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+	
+	
+<!-- ************************* -->
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- ************************* -->	
+<!-- scroll button  script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- ************************* -->	
+<!-- scroll button end -->	
+	
+	
+	
+	
+	
+
+<div id="wrapper">	
+<!--  navigation Menu -->	
+<div class="navbar">
+ <div class="current_page_item">  <a href="index.html">Home</a> </div>
+ <!-- <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Link1</a>
+      <a href="#team">Link2</a>
+      <a href="#careers">Link3</a>
+    </div>
+  </div>    
+  <div class="subnav">
+	<button class="subnavbtn">Submenu <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+    </div>
+  </div> -->
+  <div class="subnav">
+    <button class="subnavbtn"> Research<i class="fa fa-caret-down"></i></button>
+    <!--<div class="subnav-content">
+      <a href="pages/esp32csi.html" >esp32 csi tool</a>
+    </div>-->
+  </div>    
+    <!--<a href="projects.html">Projects</a> -->
+  <a href="links.html">Links</a>
+</div>
+
+	<!-- End  navigation menu-->
+	
+	<!-- end #header -->
+	
+	<!-- end #menu -->
+	
+	
+<!-- ************************* -->	
+	
+<div id="page">
+<div id="page-bgtop">
+<div id="page-bgbtm">
+<div id="content">
+<div class="post">
+<h2 class="title"> WiFi Sensing</h2>
+<div class="entry">
+<p><!--<img src="images/img03.jpg" width="186" height="186" alt="" class="alignleft border" /> --> 
+	Wi-Fi is a wireless networking technology basically used for communication between devices.  
+	Apart from its primary use for communication, WiFi can be used as various sensing tasks. 
+	WiFi sensing  is a new technology that reuses the  existing Wi-Fi  infrastructure.
+	In Wi-Fi sensing, Wi-Fi signals are used  for several sensing assignments, such as health monitoring, 
+	environment monitoring, Home monitoring, elderly  people monitoring, activity classification, gesture recognition,
+	human identification, localization, human counting, Wi-Fi imaging, fall detection and many more.</p>
+	
+ <!-- <a href="#" class="button"><i>Read More...</i></a> -->
+ <p> Specifically, two frequency bands are used for Wi-Fi signals are 2.4 GHz and 5 GHz. The IEEE standard for Wi-Fi is IEEE 802.11.
+ There are many variants of 802.11 and different 802.11 variants use different bands. Wi-Fi frequency bands (2.4 GHz, 5 GHz), these bands are divided into smaller bands which are referred to as Wi-Fi channels.
+ A Wi-Fi channel is the medium through which a wireless communication takes place. IEEE 802.11 standards define 14 Wi-Fi channels in 2.4 GHz ISM band. Not all of the Wi-Fi channels are allowed in all countries. 
+ In North America 11 channels are allowed and 13 are allowed in Europe where channels have been defined by ETSI. Here is the list of channels allowed in different countries. 
+The 802.11 Wi-Fi standards specify a bandwidth of 20/22 MHz with channel separation of 5 MHz.  By default, the 2.4 GHz frequency uses a 20 MHz channel width. The 20/22 MHz bandwidth and channel separation of 5 MHz means that adjacent channels overlap which leads signals from neighbouring channels to interfere with each other. 
+Wi-Fi fewquency band 2.4 GHz has three non-overlapping channels. These  channels are  1, 6, 11, or 2, 7, 12, or 3, 8, 13 are non-overlapping channels. Often WiFi routers are set to channel 6 as the default, and therefore the set of channels 1, 6 and 11 is possibly the most widely used. Channels that have interference from other devices are considered to be 'crowded'. To avoid this we need to change router's wireless settings to change the Wi-Fi channel it is using.  </p>
+<p> There are  total 45 Wi-Fi channels in 5 GHz frequency band with 24 non-overlapping channels.  The number of available 5 GHz channels varies significantly from country to country. </p>
+
+ 
+  <p>The channels that are supported depend on the regulation in each country. The table below summary of 2.4 GHz and 5 GHz channels avialble in some regions.</p>
+ <table style="width:100%">
+  <tr>
+    <th>Region</th>
+    <th>2400 to 2483 MHz (2.4 GHz) </th>
+    <th>5.15 to 5.85 GHz (5 GHz)</th>
+  </tr>
+  
+  
+    <tr><td>US and Canada</td> 
+	    <td>1-11</td>
+	     <td>36, 40, 44, 48, 52, 56, 60, 64,100, 104, 108, 112, 116, 132, 136, 140, 149, 153, 157, 161, 165</td> 
+	</tr>
+	
+   <tr> <td>*Europe</td>
+    <td>1-13</td>
+	<td> 36, 40, 44, 48, 52, 56, 60, 64, 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140</td>
+   </tr>
+   
+    <tr> <td>*Japan, China, Australia, India</td> 
+ <td>1-13 </td>
+	<td>* Channels may vary from country to country (or) region to region </td>
+    </tr>
+   
+ 
+</table>
+
+</div> <!--post-->
+</div><!--entry-->
+					
+<!-- ************************* -->						
+					
+<div class="post">
+<!--<h2 class="title"><a href="#">Channel State Information</a></h2> -->
+<h2 class="title">Channel State Information</a></h2> 
+<div class="entry">
+<p>Channel State Information (CSI) in Wi-Fi based sensing technology is widely used for different sensing purposes. 
+ CSI is information which represents the state of a communication link/channel.
+ This information describes how a signal propagates from the transmitter to the receiver and represents the combined effect, for example, scattering, fading, and power decay with distance.
+  In Wi-Fi, the CSI is typically measured at the receiver and is transmitted back to the sender, which requires significant overhead. For example, on a 20-MHz channel with 64 subcarriers, the full CSI for a single antenna pair has 64 complex numbers.
+  Compared with RSSI, CSI is more detailed description of the signal propagation of multipath. CSI contains the amplitude and phase information of each subcarrier that provide a fine-grained information. In  Orthogonal Frequency Division Multiplexing(OFDM) modulation technology, which is the modulated signal through multiple subcarriers in different frequencies on the transmission. 
+We can obtained  the frequency response of  each subcarriers of the channel in the form of channel state information at receiver end.</p>
+ <!-- <a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600B/WebHelp/Subsystems/wlan-ofdm/content/ofdm_basicprinciplesoverview.htm" class="button"><i>Read More...</i></a> </p> -->
+</div> <!--post-->
+</div><!--entry-->
+		
+<div class="post">
+<!--<h2 class="title"><a href="#">Channel State Information</a></h2> -->
+<h2 class="title"> Orthogonal Frequency Division Multiplexing (OFDM) and 802.11 WLAN</a></h2> 
+<div class="entry">
+<p>Orthogonal Frequency Division Multiplexing (OFDM) is a digital multi-carrier modulation scheme that extends the concept of single subcarrier modulation by using multiple subcarriers within the same single channel.
+ Rather than transmit a high-rate stream of data with a single subcarrier, OFDM makes use of a large number of closely spaced orthogonal subcarriers that are transmitted in parallel.
+ <a href="http://rfmw.em.keysight.com/wireless/helpfiles/89600B/WebHelp/Subsystems/wlan-ofdm/content/ofdm_basicprinciplesoverview.htm" class="button"><i> More details...</i></a>
+ 
+
+   </p>
+</div> <!--post-->
+</div><!--entry-->
+		
+
+
+
+
+
+ <!--<p>Rounded corners for an element with a border:</p>
+<p id="rcorners1">Rounded corners!jfkghjfgh.jkfgh.ksjdfg.kdfjgh.afkjdghkdjfhg;kjfdgh;kjdsfghkjfdghkjfdglfhdgklfdhglkfhdlk</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners2">Rounded corners!</p>
+
+
+<ul class="custom-list">
+	<li>A</li>
+	<li>B</li>
+	<li>C</li>
+	<li>D</li>
+	<li>E</li>
+</ul> -->
+		
+					
+<div style="clear: both;">&nbsp;</div>
+</div> <!--content-->
+<div style="clear: both;">&nbsp;</div>
+</div> <!--page-bgbtmt-->
+</div> <!--page-bgtop-->
+</div>  <!--page-->
+<!-- end #page -->
+</div> <!--wrapper-->
+
+
+<!-- ************************* -->	
+
+<div id="footer">
+	<!-- <p>(&copy; 2021. All rights reserved, <a href="https://sahooajitkumar.github.io/" target="_blank">Ajit Kumar Sahoo </a>, email: ajit@uohyd.ac.in)</p> -->
+	<p>(&copy; 2021. All rights reserved)</p>
+</div>
+<!-- end #footer -->
+
+</body>
+</html>
