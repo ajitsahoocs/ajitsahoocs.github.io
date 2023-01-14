@@ -430,8 +430,8 @@ table.imgtable, table.imgtable td {
 .topnav {
   background-color: #566573;
   overflow: hidden;
-  position: sticky;
-  top: 0;
+  /*position: sticky;
+  top: 0; */
   height:50px;
 
 }
