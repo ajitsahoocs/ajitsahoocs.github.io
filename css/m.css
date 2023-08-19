@@ -461,3 +461,39 @@ table.imgtable, table.imgtable td {
   color: #fdfefe;
   font-weight:600;
 }
+
+
+
+
+/********************Teachings ********************/
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.course-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-description {
+    line-height: 1.6;
+}
+
+.course-schedule,
+.course-materials {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
