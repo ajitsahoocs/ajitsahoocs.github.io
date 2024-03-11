@@ -410,6 +410,7 @@ tr.heading {
 
 img {
     border: none;
+    border-radius: 50%;
 }
 
 table.imgtable, table.imgtable td {
@@ -450,7 +451,7 @@ table.imgtable, table.imgtable td {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: rgb(255, 255, 255);
+  color: #f5c771;
   opacity: 1;
   
 }
@@ -458,7 +459,7 @@ table.imgtable, table.imgtable td {
 /* Add a color to the active/current link */
 .topnav a.active {
  background-color: #566573;
-  color: #fdfefe;
+  color: #faf9ac;
   font-weight:600;
 }
 
