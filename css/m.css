@@ -411,6 +411,7 @@ tr.heading {
 img {
     border: none;
     border-radius: 50%;
+    border-color: #808080;
 }
 
 table.imgtable, table.imgtable td {
