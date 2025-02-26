@@ -176,4 +176,21 @@
             margin-left: 20px;
         }
 
-    
+    /* Basic styling for the social icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.social-icon:hover {
+    transform: scale(1.2); /* Increase size */
+    filter: brightness(1.2); /* Make image a bit brighter */
+}
+
+/* Optional: Change border or shadow */
+.social-icon:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
