@@ -39,14 +39,17 @@
         }
 
         .topnav a:hover {
-            background-color: #ddd;
-            color: black;
+        transform: scale(1.2); /* Increase size */
+        filter: brightness(1.2); /* Make image a bit brighter *//
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+        color:#d0d3d4;
+	cursor: default; 
         }
 
         .topnav a.active {
-            background-color:  #04536d;
-            color:   #ffd071;
-			font-weight:600;
+        color:   #ffd071;
+	font-weight:300;
+	pointer-events: none;  /* Disable hover effect */
         }
 
         .topnav .icon {
