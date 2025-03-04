@@ -43,7 +43,7 @@
         filter: brightness(1.2); /* Make image a bit brighter *//
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
         color:#d0d3d4;
-	cursor: default; 
+	
         }
 
         .topnav a.active {
