@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: #f0f0f0;
+  max-width: 800px;          /* same width as body content */
+  margin: 0 auto;            /* center horizontally */
+  position: sticky;          /* stays visible when scrolling */
+  top: 0;
+  z-index: 1000;  /* optional rounded edges */
+
+}
+
+.nav__content {
+  max-width: 800px;   /* match body width */
+  margin: auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  max-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 400;
+}
+
+.description {
+  line-height: 1rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.social-icons i {
+  font-size: 18px;
+  margin: 0 9px;
+
+}
+
+.social-icons i:hover {
+  color: #ff6656;
+  cursor: pointer;
+
+}
+
+.social-icons i:hover a{
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+ display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image img {
+ 
+  border-radius: 100%;
+  overflow: hidden;
+  width: 200px;
+  height: 220px; 
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+
+
+/*--------------   new added items ---------------- */
+
+.section-link {
+  text-decoration: none;
+  color: #333; /* default text color */
+  transition: color 0.3s ease;
+}
+
+.section-link:hover {
+  color: #007acc; /* highlight color on hover */
+}
+
+
+.section {
+      background-color:#f5f5f5;       /* white box */
+      margin:auto;             /* spacing around */
+      padding: 20px;                 /* inner spacing */
+      max-width: 800px;              /* centered width */
+     
+    }
+
+    .section h3 a {
+      text-decoration: none;
+      color: #800000;
+      transition: color 0.3s ease;
+    }
+
+    .section h3 a:hover {
+      color: #007acc; /* hover highlight */
+    }
+
+.section p {
+  text-align: justify;   /* aligns text evenly */
+  line-height: 1.6;      /* improves readability */
+  margin-bottom: 15px;   /* spacing between paragraphs */
+}
+
+
+
+footer {
+  background-color: #f0f0f0;   /* light background */
+  max-width: 800px;            /* same width as body content */
+  margin: 0 auto 0 auto;    /* spacing above footer */
+  padding: 10px;
+
+  text-align: center;
+  border-top: 4px solid var(--primary-color); /* horizontal line above footer */
+}
+
+.footer__content p {
+  color: var(--text-light);
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+}
+
+.footer__content .social-icons i {
+  font-size: 25px;
+  margin: 0 8px;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.footer__content .social-icons i:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.section-divider {
+  max-width: 800px; /* align with body width */
+  margin: 0px auto; /* spacing above and below */
+  border: none;
+  height: 5px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border-radius: 5px;
+}
+
+.grey-line {
+  max-width: 800px;        /* align with body width */
+  margin: 0px auto;       /* spacing above and below */
+  height: 4px;             /* thickness of line */
+  background-color: #ddd;  /* grey color */
+  border-radius: 2px;      /* smooth edges */
+}
+
+
+/* style.css */
+.my-ul {
+  margin-left: 40px;   /* space on the left */
+  margin-right: 40px;  /* space on the right */
+  line-height: 1.8;    /* vertical spacing between lines */
+  list-style-type: disc; /* ensures bullets are visible */
+  display: block;          /* forces vertical stacking */
+}
+
+.my-ul li {
+  margin-bottom: 5px; /* extra space between items */
+ display: list-item;       /* restores default list-item behavior */
+}
+
+/* Reset link styles to default */
+.my-ul a {
+  color: blue;           /* restores browser default (blue) */
+  font-weight: normal;       /* removes bold */
+  display: inline;          /* ensures no extra box spacing */
+  padding: 0;               /* removes extra padding */
+  margin: 0;                /* removes extra margin */
+}
+
+
+/*-----------------END---------------------*/
